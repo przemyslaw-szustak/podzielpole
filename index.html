@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-5.13.0-web/css/all.min.css" />
+
+    <title>Podziel pole na pola</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="">
+            <h2>Ogólne</h2>
+            <button class="btn btn-danger ">Zacznij od nowa</button>
+        </div>
+        <div class="mainBoardsContainer">
+            <h2>Płyty</h2>
+            <form class="form-inline">
+                <label class="sr-only" for="newMainBoardLength">Długość</label>
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fas fa-arrows-alt-v"></i></div>
+                    </div>
+                    <input autocomplete="off" type="text" class="form-control" id="newMainBoardLength" placeholder="Długość">
+                    <div class="input-group-append">
+                        <div class="input-group-text">[m]</div>
+                    </div>
+                </div>
+
+                <label class="sr-only" for="newMainBoardWidth">Szerokość</label>
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fas fa-arrows-alt-h"></i></div>
+                    </div>
+                    <input autocomplete="off" type="text" class="form-control" id="newMainBoardWidth" placeholder="Szerokość">
+                    <div class="input-group-append">
+                        <div class="input-group-text">[m]</div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success mb-2">Dodaj płytę</button>
+            </form>
+            <div class="mainBoardsListContainer">
+                - brak płyt -
+            </div>
+        </div>
+        <div class="formatsContainer">
+            <h2>Formatki</h2>
+            <form class="form-inline">
+                <label class="sr-only" for="newFormatLength">Długość</label>
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fas fa-arrows-alt-v"></i></div>
+                    </div>
+                    <input autocomplete="off" type="text" class="form-control" id="newFormatLength" placeholder="Długość">
+                    <div class="input-group-append">
+                        <div class="input-group-text">[m]</div>
+                    </div>
+                </div>
+
+                <label class="sr-only" for="newFormatWidth">Szerokość</label>
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fas fa-arrows-alt-h"></i></div>
+                    </div>
+                    <input autocomplete="off" type="text" class="form-control" id="newFormatWidth" placeholder="Szerokość">
+                    <div class="input-group-append">
+                        <div class="input-group-text">[m]</div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success mb-2">Dodaj formatkę</button>
+            </form>
+            <div class="formatsListContainer">
+                - brak płyt -
+            </div>
+        </div>
+        <div>
+            Wyniki
+            problem optymalnego rozkroju
+            https://books.google.pl/books?id=vuQFCAAAQBAJ&pg=PA190&lpg=PA190&dq=javascript+two+dimensional+cutting+stock&source=bl&ots=w5AgazAKlD&sig=ACfU3U2EMe1IM4yduSAldHTA57nXW1D0zw&hl=pl&sa=X&ved=2ahUKEwjRxbWkiofqAhVSAxAIHU9cD_4Q6AEwAnoECAgQAQ#v=onepage&q=javascript%20two%20dimensional%20cutting%20stock&f=false
+            https://optymalizacja-rozkroju.waw.pl/
+            https://codeincomplete.com/articles/bin-packing/
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="App.js"></script>
+    <script src="MainBoard.js"></script>
+    <script src="Formats.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
